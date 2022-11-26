@@ -5,30 +5,30 @@ export const App = () => {
   return (
     <>
       {/*入力 */}
-      <div>
+      <div className="input-area">
         <input placeholder="TODOを入力" />
         <button>追加</button>
       </div>
       {/*未完了 */}
-      <div>
-        <div>
-          <p>未完了のTODO</p>
-          <button>完了</button>
-          <button>削除</button>
-        </div>
+      <div className="incomplete-area">
+        <p className="title">未完了のTODO</p>
         <ul>
-          <li>aaaa</li>
+          <div className="list-row">
+            <li>aaaa</li>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
         </ul>
       </div>
-      <div>
-        {/*完了 */}
-        <div>
-          <p>完了のTODO</p>
-          <button>完了</button>
-          <button>削除</button>
-        </div>
+
+      {/*完了 */}
+      <div className="complete-area">
+        <p className="title">未完了のTODO</p>
         <ul>
-          <li>aaaa</li>
+          <div className="list-row">
+            <li>aaaa</li>
+            <button>戻す</button>
+          </div>
         </ul>
       </div>
     </>
